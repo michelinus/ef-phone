@@ -1,9 +1,9 @@
 QB.Phone.Settings = {};
-QB.Phone.Settings.Background = "ef-wallpaper";
+QB.Phone.Settings.Background = "af-wallpaper";
 QB.Phone.Settings.OpenedTab = null;
 QB.Phone.Settings.Backgrounds = {
-    'ef-wallpaper': {
-        label: "Standard QBCore"
+    'af-wallpaper': {
+        label: "Standard AfterLife"
     }
 };
 
@@ -58,7 +58,7 @@ QB.Phone.Functions.LoadMetaData = function(MetaData) {
     if (MetaData.background !== null && MetaData.background !== undefined) {
         QB.Phone.Settings.Background = MetaData.background;
     } else {
-        QB.Phone.Settings.Background = "ef-wallpaper";
+        QB.Phone.Settings.Background = "af-wallpaper";
     }
 
     var hasCustomBackground = QB.Phone.Functions.IsBackgroundCustom();
