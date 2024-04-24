@@ -68,9 +68,9 @@ $.each(data.applications, function(i, app){
     if ((!app.job || app.job === QB.Phone.Data.PlayerJob.name) && !blockedapp) {
         $(applicationSlot).css({"background-color":app.color});
         var icon = '<i class="ApplicationIcon '+app.icon+'" style="'+app.style+'"></i>';
-        if (app.app == "meos") {
-            icon = '<img src="./img/politie.png" class="ef-app-icon">';
-        }
+        //if (app.app == "meos") {
+        //    icon = '<img src="./img/politie.png" class="ef-app-icon">';
+        //}
         if (app.app == "whatsapp") {
             icon = '<img src="./img/apps/whatsapp.png" class="ef-app-icon">';
         }
@@ -94,9 +94,6 @@ $.each(data.applications, function(i, app){
         }
         if (app.app == "calculator") {
             icon = '<img src="./img/apps/calculator.png" class="ef-app-icon">';
-        }
-        else if (app.app == "paytm"){
-        icon = '<img src="./img/apps/paytm.png" class="ef-paytmapp-icon">';
         }
         if (app.app == "advert") {
             icon = '<img src="./img/apps/ads.png" class="ef-app-icon">';

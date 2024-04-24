@@ -6,7 +6,7 @@ Config.BillingCommissions = { -- This is a percentage (0.10) == 10%
 Config.Webhook = 'https://discord.com/api/webhooks/1232295830254260224/ZR1Cztvjkg8Jy6CbprcOQnL7Ec2WH5D6zOs-JTsm9lpbPQ0b1KtqA2MahES32UHs5D0b'
 
 Config.Linux = true      -- True if linux
-Config.TweetDuration = 12 -- How many hours to load tweets (12 will load the past 12 hours of tweets)
+Config.TweetDuration = 24 -- How many hours to load tweets (12 will load the past 12 hours of tweets)
 Config.RepeatTimeout = 2000
 Config.CallRepeats = 10
 Config.OpenPhone = 244
@@ -190,6 +190,16 @@ Config.PhoneApplications = {
         -- icon = 'fas fa-ad',
         tooltipText = 'MDT',
         job = 'police',
+        blockedjobs = {},
+        slot = 17,
+        Alerts = 0,
+    },
+    ['dj'] = {
+        app = 'dj',
+        color = '#004682',
+        icon = 'fas fa-ad',
+        tooltipText = 'Gestione DJ',
+        job = false,
         blockedjobs = {},
         slot = 17,
         Alerts = 0,
